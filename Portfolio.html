@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio Page</title>
+
+    <style>
+
+  .wrapper {
+      margin: 0 auto;
+      font: 1.2em Helvetica, arial, sans-serif;
+  }
+
+  .wrapper > * {
+      border: 2px solid ;
+      padding: 0px;
+  }
+
+  nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+ }
+
+ .main-nav {
+ grid-area: nav;
+ position: fixed;
+ width: 98.8%;
+ background-color: white;
+ transition: none;
+ }
+
+ #logo{
+   float: left;
+   height: 100px;
+   width: 300px;
+ }
+
+ .navBar_head{
+   padding-left: 60px;
+   float: left;
+   font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
+       padding-top: 10px;
+       font-weight: 600;
+       color: black;
+ }
+
+ #Search{
+     margin-left: 200px;
+     margin-top: 10px;
+ }
+
+
+    a {
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 11px;
+    }
+
+    a:hover {
+      color: #ed524d;
+    }
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+  margin-top: 200%;
+  width:250px;
+  height:280px;
+}
+
+.box:nth-child(even) {
+  background-color: black;
+  color: #000;
+}
+
+    .wrapper {
+        width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(6, 300px);
+        grid grid-gap: 5%;
+        margin-right: 19%;
+        margin-top: -20px;
+    }
+
+</style>
+  </head>
+
+  <body>
+
+          <nav class="main-nav">
+
+              <img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSapd5gAl4HkztYjeRvCw2NUo6KGMa_B3TG5fcqac0KWilf5ZwC" alt="">
+                <a class="navBar_head" href="MM_project.html">Home</a>
+                <a class="navBar_head" href="Portfolio.html">Portfolio</a>
+                <a class="navBar_head" href="aboutUs.html">About</a>
+                <a class="navBar_head" href="contact.html">Contact</a>
+                <input id="Search" type="text" placeholder="Search" > <input type="submit" value="Go">
+          </nav>
+
+          <div class="wrapper">
+<div class="box box1">
+<img src="Pictures\IMG_7407.JPG" alt=""width="250px" height="280px">
+</div>
+<div class="box box2">
+  <img src="Pictures\IMG_3295.jpg" alt=""width="250px" height="280px">
+</div>
+<div class="box">
+  <img src="Pictures\IMG_7401.JPG" alt=""width="250px" height="280px">
+</div>
+<div class="box">
+<img src="Pictures\IMG_7446.JPG" alt=""width="250px" height="280px">
+</div>
+</div>
+
+<div class="wrapper">
+<div class="box box1">
+<img src="Pictures\IMG_7407.JPG" alt=""width="250px" height="280px">
+</div>
+<div class="box box2">
+<img src="Pictures\IMG_3295.jpg" alt=""width="250px" height="280px">
+</div>
+<div class="box">
+<img src="Pictures\IMG_7401.JPG" alt=""width="250px" height="280px">
+</div>
+<div class="box">
+<img src="Pictures\IMG_7446.JPG" alt=""width="250px" height="280px">
+</div>
+</div>
+  </body>
+</html>

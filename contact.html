@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Page</title>
+    <style>
+    * {box-sizing: border-box;}
+
+  body {
+    color: #666;
+    background-color: #fff;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.7em;
+    font-size: 15px;
+    height: 1200%;
+    }
+
+
+  .wrapper {
+      margin: 0 auto;
+      font: 1.2em Helvetica, arial, sans-serif;
+  }
+
+  .wrapper > * {
+      border: 2px solid ;
+      padding: 0px;
+  }
+
+  nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+    .content {
+    grid-area: content;
+    background-size: contain;
+    height: 130%;
+    width: 100%;
+    margin-top: 100px;
+    }
+
+    .main-nav {
+    grid-area: nav;
+    position: fixed;
+    width: 98.8%;
+    background-color: white;
+    transition: none;
+
+    }
+
+    .ad {
+    grid-area: ad;
+        margin-top: 70px;
+    }
+
+    .wrapper {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-areas:
+
+      "nav"
+      "content"
+      "ad"
+      "footer";
+    }
+
+    @media (min-width: 100%) {
+    .wrapper {
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas:
+        "header  header"
+        "nav     nav"
+        " content"
+        "ad"
+         "footer"
+         "ad3";
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    }
+
+    @media (min-width: 100%) {
+    .wrapper {
+      grid-template-columns: 1fr 4fr 1fr ;
+      grid-template-areas:
+        "nav nav nav"
+        "header header  header"
+        "content content content"
+        "content content content"
+        " ad ad ad "
+        " ad ad ad "
+        "footer footer  footer"
+        "footer footer  footer"
+
+     }
+
+     nav ul {
+       flex-direction: column;
+     }
+    }
+
+    #logo{
+      float: left;
+      height: 100px;
+      width: 300px;
+    }
+
+    .navBar_head{
+      padding-left: 80px;
+      float: left;
+      font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
+          padding-top: 10px;
+          font-weight: 600;
+          color: black;
+    }
+
+    #Search{
+        margin-left: 200px;
+        margin-top: 10px;
+    }
+
+    #more_button{
+      background-color: #ce5858;
+      color: #fff!important;
+      width: 130px;
+      height: 50px;
+      border-radius: 8%;
+      margin-top: 9px;
+    }
+
+
+    .description{
+          text-shadow: 0 1px 3px rgb(7, 7, 7);
+          color: #fff;
+          background-color: #eadede ;
+          width: 100%;
+          height: 180px;
+          font-size: 15px;
+          text-align: center;
+    }
+
+
+    .navBar_Con{
+        text-align: center;
+    }
+
+    .slide_content{
+      font-size: 14px;
+      text-align: center;
+    }
+
+    table, th, td {
+    border: none;
+    border-collapse: collapse;
+
+}
+
+.who_we{
+  margin-top: 9%;
+  margin-left: 6%;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.Who{
+  text-decoration: underline;
+  text-decoration-color: #f9dbdb;
+}
+
+.information_who{
+  float: left;
+  font-size: 12px;
+  width: 400px;
+  height: 226px;
+  margin-left: 3%;
+  margin-bottom: -60%;
+  margin-top: 60px;
+}
+
+#contact_info {
+    float: right;
+    margin-top: -78mm;
+    margin-right: -100mm;
+  }
+
+ #p {
+    margin-left: 0px;
+    width:300px;
+  }
+
+  .form{
+    margin-top: -3mm;
+    margin-left: 4%;
+    width: 50%;
+  }
+
+  .information{
+    margin-left: 48%;
+    margin-top: 15%;
+    margin-bottom: -118mm;
+  }
+
+  .map{
+    margin-top: 64%;
+    margin-left: -8%;
+    margin-right: 20px;
+  }
+
+#direction{
+  margin-top: -45%;
+}
+
+.counter {
+  display: table-cell;
+  margin: 1.5%;
+  font-size:50px;
+  background-color: #282727;
+  width:500px;
+  border-radius: 50%;
+  height:200px;
+  vertical-align: middle;
+}
+
+
+.Logo{
+  background-color: #282727;
+  margin-top: 12mm;
+}
+
+.company_information{
+  width: 50mm;
+  margin-left: 26mm;
+}
+
+.footer{
+  background-color: #ce5858;
+  color: white;
+  width: 196%;
+  height: 20mm;
+  margin-left: -8%;
+  margin-bottom: -370px;
+}
+
+.company{
+  margin-left: 160%;
+  margin-top: -55mm;
+}
+
+.company2{
+  text-align: center;
+  margin-left: 70mm;
+}
+
+
+a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+a:hover {
+  color: #ed524d;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+
+          <nav class="main-nav">
+
+              <img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSapd5gAl4HkztYjeRvCw2NUo6KGMa_B3TG5fcqac0KWilf5ZwC" alt="">
+              <a class="navBar_head" href="MM_project.html">Home</a>
+              <a class="navBar_head" href="Portfolio.html">Portfolio</a>
+              <a class="navBar_head" href="aboutUs.html">About</a>
+              <a class="navBar_head" href="contact.html">Contact</a>
+                <input id="Search" type="text" placeholder="Search" > <input type="submit" value="Go">
+          </nav>
+
+          <article class="content">
+
+              <div class="description">
+                <h2>CONTACT US</h2>
+                <nav>
+                  <a class="navBar_Con" href="MM_project.html">Home</a>
+                  <a class="navBar_Con" href="">Contact</a>
+                </nav>
+              </div>
+
+              <div class="form">
+                <div class="ad"><h3><span class="who"><span class="who_we"> Send </span> Us a Message</span></h3>
+
+                <form>
+                  <input type="text" placeholder="Your Name" >
+                  <input type="text" placeholder="Your Email" >
+                  <input type="text" placeholder="Phone Number" >
+                  <p>Message:</p>
+                  <textarea name="name" rows="5" cols="72"></textarea>
+                </form>
+                <button id="more_button" type="button" name="button">SEND EMAIL</button>
+
+              </div>
+
+              <div id="contact_info">
+         <h3><span class="who"><span class="who_we"> Contact </span>Info</span></h3>
+          <p>You can support our important work in a variety of ways.</p>
+
+            <p><img src="Pictures\phone-receiver.png" alt="" width="30" height="25"> 021 685 0991</p>
+             <p><img src="http://code4ct.com/wp-content/uploads/2015/06/email-150x150.png" alt="phn" width="30" height="25"> info@code4ct.com</p>
+             <p><img src="Pictures\time.png" alt="" width="30" height="25"> Mon-Fri 09:00 - 12:00</p>
+             <p id="p"><img src="Pictures\facebook-placeholder-for-locate-places-on-maps.png" alt="" width="30" height="25"> Innovate South Africa,403 Old Castle Brewery, 6 Beach Rd,Woodstock, Cape Town, 7915</p>
+        </div>
+
+        <div class="map">
+
+          <iframe id="direction" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.638062446006!2d18.44652591483123!3d-33.924713680640664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d9854044ed9%3A0x6a0ebf49da5aabab!2sCodeSpace!5e0!3m2!1sen!2sza!4v1510834795671" width="190%" height="350"></iframe>
+        </div>
+
+
+            <div class="company_information">
+              <h3 id="legal">Legal</h3>
+            <p>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</p>
+
+             <h3 class="company">Company</h3>
+             <ul>
+             <li><a class="company2" href="#">About</a></li>
+             <li><a class="company2" href="#">Contact</a></li>
+             <li><a class="company2" href="#">Blog</a></li>
+             <li><a class="company2" href="#">Testimonals</a></li>
+             <li><a class="company2" href="#">Attiliate program</a></li>
+
+           </ul>
+           </div>
+
+            <div class="footer">
+              <p>copyright</p>
+            </div>
+        </article>
+      </div>
+  </body>
+</html>
